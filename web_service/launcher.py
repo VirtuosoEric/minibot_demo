@@ -27,7 +27,7 @@ class Launcher:
         subprocess.Popen(['bash %s/bash_script/pub_goal.bash -0.168 -0.478 0 0 0.999 0.0138' %self.working_path],shell=True)
 
     def approach_radiation(self):
-        subprocess.Popen(['bash %s/bash_script/pub_goal.bash -0.181 0.51 0 0 0.999 -0.0238' %self.working_path],shell=True)
+        subprocess.Popen(['bash %s/bash_script/pub_goal.bash 0.038 -0.643 0 0 -0.4530 0.891' %self.working_path],shell=True)
 
     def go_home(self):
         subprocess.Popen(['bash %s/bash_script/pub_goal.bash' %self.working_path],shell=True)

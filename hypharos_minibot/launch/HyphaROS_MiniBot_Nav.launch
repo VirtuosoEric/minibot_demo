@@ -63,12 +63,13 @@
     <!-- ********************** -->
     <!-- Navigation (move_base) -->
     <!-- ********************** -->
-    <node pkg="move_base" type="move_base" respawn="false" name="move_base" >
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
         <!-- global planner -->
         <param name="base_global_planner" value="global_planner/GlobalPlanner" />
         <rosparam file="$(find hypharos_minibot)/param/global_planner_params.yaml" command="load" />
         <!-- local planner -->   
-        <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" if="$(arg use_dwa)"/>      
+        <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" if="$(arg use_dwa)"/>
+        <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS" unless="$(arg use_dwa)"/>      
         <rosparam file="$(find hypharos_minibot)/param/dwa_local_planner_params.yaml" command="load" if="$(arg use_dwa)"/>
         <rosparam file="$(find hypharos_minibot)/param/base_local_planner_params.yaml" command="load" unless="$(arg use_dwa)" />         
         <!-- params for move_base -->

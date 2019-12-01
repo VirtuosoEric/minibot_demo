@@ -5,10 +5,10 @@ TrajectoryPlannerROS:
   acc_lim_y: 0.05
 
   #Set the velocity limits of the robot
-  max_vel_x: 0.7
-  min_vel_x: 0.02
-  max_vel_theta: 0.7
-  min_vel_theta: -0.7
+  max_vel_x: 0.2
+  min_vel_x: 0.1
+  max_vel_theta: 0.5
+  min_vel_theta: -0.5
   min_in_place_rotational_vel: 0.6
 
   #The velocity the robot will command when trying to escape from a stuck situation
@@ -19,7 +19,7 @@ TrajectoryPlannerROS:
 
   #Set the tolerance on achieving a goal
   xy_goal_tolerance: 0.1 # m
-  yaw_goal_tolerance: 0.5 # rad
+  yaw_goal_tolerance: 0.3 # rad
   latch_xy_goal_tolerance: true
 
   #We'll configure how long and with what granularity we'll forward simulate trajectories

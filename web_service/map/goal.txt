@@ -1,0 +1,56 @@
+heat
+header: 
+  seq: 90
+  stamp: 
+    secs: 1575208978
+    nsecs: 835917584
+  frame_id: "map"
+pose: 
+  position: 
+    x: -0.181562453508
+    y: -0.510566055775
+    z: 0.0
+  orientation: 
+    x: 0.0
+    y: 0.0
+    z: 0.999714633887
+    w: -0.0238882982352
+
+---
+header: 
+  seq: 119
+  stamp: 
+    secs: 1575209614
+    nsecs: 517196889
+  frame_id: "map"
+pose: 
+  position: 
+    x: -0.168501242995
+    y: -0.478021532297
+    z: 0.0
+  orientation: 
+    x: 0.0
+    y: 0.0
+    z: 0.999904393146
+    w: 0.0138276739769
+---
+
+
+Radiation
+header: 
+  seq: 90
+  stamp: 
+    secs: 1575208978
+    nsecs: 835917584
+  frame_id: "map"
+pose: 
+  position: 
+    x: -0.181562453508
+    y: -0.510566055775
+    z: 0.0
+  orientation: 
+    x: 0.0
+    y: 0.0
+    z: 0.999714633887
+    w: -0.0238882982352
+

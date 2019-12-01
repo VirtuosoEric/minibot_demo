@@ -24,10 +24,10 @@ class Launcher:
         subprocess.call(['pkill', '-f', 'draw_map.py'])
 
     def approach_heat(self):
-        subprocess.Popen(['bash %s/bash_script/pub_goal.bash 1 2 3 4 5 6' %self.working_path],shell=True)
+        subprocess.Popen(['bash %s/bash_script/pub_goal.bash -0.168 -0.478 0 0 0.999 0.0138' %self.working_path],shell=True)
 
     def approach_radiation(self):
-        subprocess.Popen(['bash %s/bash_script/pub_goal.bash 2 3 4 5 1 7' %self.working_path],shell=True)
+        subprocess.Popen(['bash %s/bash_script/pub_goal.bash -0.181 0.51 0 0 0.999 -0.0238' %self.working_path],shell=True)
 
     def go_home(self):
         subprocess.Popen(['bash %s/bash_script/pub_goal.bash' %self.working_path],shell=True)

@@ -15,7 +15,7 @@
         }
         
         #Sidebar {
-            width: 240px;
+            width: 270px;
             float: left;
             height: auto;
             text-align: center;
@@ -52,26 +52,20 @@
 <body>
     <div id="Header">Virtuosorobotics</div>
     <div id="Sidebar">
-        <form method="get" action="start">
-            <button type="submit" style="background-color:#F8C471  ;width:120px;height:55px;font-size:20px;">啟動</button>
+        <form method="get" action="start_nav">
+            <button type="submit" style="background-color:#F8C471;width:250px;height:auto;font-size:20px;">START</button>
         </form>
-        <form method="get" action="goalA_to">
-            <button type="submit" style="background-color:#ABEBC6;width:120px;height:30px;font-size:20px;">goalA_to</button>
+        <form method="get" action="approach_heat">
+            <button type="submit" style="background-color:#ABEBC6;width:250px;height:auto;font-size:20px;">Approach Heat</button>
         </form>
-        <form method="get" action="goalA_leave">
-            <button type="submit" style="background-color:#ABEBC6;width:120px;height:30px;font-size:20px;">goalA_leave</button>
+        <form method="get" action="approach_radiation">
+            <button type="submit" style="background-color:#ABEBC6;width:250px;height:auto;font-size:20px;">Approac Radiation</button>
         </form>
-        <form method="get" action="goalB_to">
-            <button type="submit" style="background-color:#AED6F1;width:120px;height:30px;font-size:20px;">goalB_to</button>
+        <form method="get" action="go_home">
+            <button type="submit" style="background-color:#AED6F1;width:250px;height:auto;font-size:20px;">Go Home</button>
         </form>
-        <form method="get" action="goalB_leave">
-            <button type="submit" style="background-color:#AED6F1;width:120px;height:30px;font-size:20px;">goalB_leave</button>
-        </form>
-        <form method="get" action="goalC_to">
-            <button type="submit" style="background-color:#D2B4DE;width:120px;height:30px;font-size:20px;">goalC_to</button>
-        </form>
-        <form method="get" action="goalC_leave">
-            <button type="submit" style="background-color:#D2B4DE;width:120px;height:30px;font-size:20px;">goalC_leave</button>
+        <form method="get" action="stop">
+            <button type="submit" style="background-color:#AED6F1;width:250px;height:auto;font-size:20px;">STOP</button>
         </form>
     </div>
     <div id="Body">
@@ -87,7 +81,7 @@
         }, 1000);
     </script>
     <div style='clear:both;'></div>
-    <div id="Footer">author Berry</div>
+    <div id="Footer">Author Berry</div>
 </body>
 
 </html>

@@ -1,19 +1,18 @@
 #!/usr/bin/env python
 from PIL import Image
-import cherrypy
-import rospy
-from geometry_msgs.msg import PoseStamped
+import cherrypy,time,os,threading
 from launcher import Launcher
-import threading
 
 class RobotService:
 
     def __init__(self):
         self.launcher = Launcher()
+        time.sleep(1)
+        self.launcher.start_nav()
     
     @cherrypy.expose
     def index(self):
-        return open("/web/home.html", "r")
+        return open("./web/home.html", "r")
 
     @cherrypy.expose
     def start_nav(self):
@@ -35,5 +34,10 @@ class RobotService:
         self.launcher.go_home()
         return 'go home'
 
+    @cherrypy.expose
+    def stop(self):
+        self.launcher.stop()
+
 if __name__ == '__main__':
+    os.chdir('/home/ubuntu/catkin_ws/src/minibot_demo/web_service/')
     cherrypy.quickstart(RobotService(), '/',"service.conf")
